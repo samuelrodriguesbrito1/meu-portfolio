@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo/logo.png"type="image/png">
+    <link rel="stylesheet" href="styles/style-geral.css">
+    <link rel="stylesheet" href="styles/style-media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Portfolio | Samuel Rodrigues</title>
+</head>
+<body onscroll="verifSection()">
+    <header class="animate__animated animate__fadeInDown">
+        <div id="menu">
+            <button onclick="changeTheme()"><i class="fa-solid fa-moon" id="theme"></i></button>
+            <div id="languages">
+                <button id="btn-pt">PT-BR</button>
+                <button id="btn-en">EN-US</button>
+            </div>
+            <button onclick="languageMenu()"><i class="fa-solid fa-language"></i></button>
+        </div>
+    </header>
+    <main class="animate__animated animate__fadeInDown">
+        <section id="home" class="active">
+            <h3>HELLO, I'M</h3>
+            <h1>SAMUEL RODRIGUES</h1>
+            <h2>BACK-END DEVELOPER</h2>
+            <p>Scroll to see more of my work</p>
+            <i class="fa-solid fa-arrow-down" id="arrow"></i>
+        </section>
+        <div class="gap" style="height: 100px;"></div>
+        <section id="aboutme" class="disable">
+            <div id="text">
+                <h1>ABOUT ME</h1>
+                <p>Hi! I’m Samuel, an 18-year-old student of Systems Analysis and Development at Fatec Mogi das Cruzes. I’m passionate about technology and love exploring how things work behind the scenes, especially in programming and software development.</p>
+            </div>
+            <div id="photo">
+                <img src="images/foto.jpg" alt="my-photo">
+            </div>
+        </section>
+        <section id="skills" class="disable">
+            <h1>MY SKILLS</h1>
+            <div id="grid-skills">
+                <div class="skill"><img src="images/html-icon.png" alt="html-icon"></div>
+                <div class="skill"><img src="images/css-icon.png" alt="css-icon"></div>
+                <div class="skill"><img src="images/python-icon.png" alt="python-icon"></div>
+                <div class="skill"><img src="images/c-icon.png" alt=""></div>
+            </div>
+        </section>
+        <section id="projects" class="disable">
+            <h1>MY PROJECTS</h1>
+            <div id="grid-projects">
+                <a href="https://github.com/samuelrodriguesbrito/Portfolio">
+                    <div class="project">
+                        <img src="images/imagem portfolio.png" alt="html-icon">
+                        <p>Portfolio <strong><i class="ri-javascript-fill"></i><i class="ri-html5-fill"></i><i class="ri-css3-fill"></i><i class="ri-remixicon-fill"></i></strong></p>
+                    </div>
+                </a>
+                <a href="https://github.com/samuelrodriguesbrito/Conversor-de-Bases" target="_blank">
+                    <div class="project">
+                        <img src="images/imagem binario.png" alt="">
+                        <p>Conversor de Bases <strong><i class="fa-brands fa-python"></i></strong></p>
+                    </div>
+                </a>
+                <div class="project"><h2></h2></div>
+                <div class="project"><h2></h2></div>
+            </div>
+        </section>
+        <section id="contact" class="disable">
+            <h1>Contacts</h1>
+            <div id="menu-social-icons">
+                <a href="https://wa.me/5511937151547?text=Olá%20Samuel,%20tudo%20bem?"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/samu.rodrii/"target="_blank" rel="external"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/samuelrodriguesbrito/" target="_blank" rel="external"><i class="ri-linkedin-line"></i></a>
+                <a href="https://github.com/samuelrodriguesbrito" target="_blank" rel="external"><i class="ri-github-line"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&to=mucarb@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
